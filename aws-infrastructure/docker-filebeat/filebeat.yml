@@ -1,6 +1,6 @@
 filebeat.inputs:
   - type: aws-cloudwatch
-    log_group_arn: arn:aws:logs:eu-central-1:654654486138:log-group:/ecs/backend:*
+    log_group_arn: arn:aws:logs:eu-central-1:024848486229:log-group:/ecs/backend:*
     scan_frequency: 1m
     start_position: beginning
 

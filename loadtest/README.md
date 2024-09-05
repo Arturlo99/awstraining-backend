@@ -42,7 +42,7 @@ mvn clean install
 3. Dockerize load test app and push to ECR
 
 ```
-aws ecr get-login-password --region eu-central-1 --profile [PROFILE] | docker login --username AWS --password-stdin 654654486138.dkr.ecr.eu-central-1.amazonaws.com
+aws ecr get-login-password --region eu-central-1 --profile [PROFILE] | docker login --username AWS --password-stdin 024848486229.dkr.ecr.eu-central-1.amazonaws.com
 ```
 
 ```
@@ -50,11 +50,11 @@ docker build -t backend-loadtest .
 ```
 
 ```
-docker tag backend-loadtest:latest 654654486138.dkr.ecr.eu-central-1.amazonaws.com/backend-loadtest:latest
+docker tag backend-loadtest:latest 024848486229.dkr.ecr.eu-central-1.amazonaws.com/backend-loadtest:latest
 ```
 
 ```
-docker push 654654486138.dkr.ecr.eu-central-1.amazonaws.com/backend-loadtest:latest
+docker push 024848486229.dkr.ecr.eu-central-1.amazonaws.com/backend-loadtest:latest
 ```
 
 4. Force new service deployment in backend-loadtest cluster
